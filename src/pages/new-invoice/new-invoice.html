@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>New Invoice</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let customer of customers">
+      <!--<ion-avatar item-start>{{customer}}
+        <img src="img/avatar-finn.png">
+      </ion-avatar>-->
+      <h3 (click)="invoiceDetails()">{{customer.name}}</h3>
+      <!--<p>Jaffna</p>-->
+    </ion-item>
+  </ion-list>
+</ion-content>
